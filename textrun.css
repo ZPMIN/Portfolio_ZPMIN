@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+
+.hidden {
+  opacity:0;
+}
+.console-container {
+  font-size:6em;
+  text-align:left;
+  height:200px;
+  width:700px;
+  display:block;
+  position:absolute;
+  color:white;
+  top:250px;
+  bottom:0;
+  left:0px;
+  right:700px;
+  margin:auto;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  animation: animate 5s linear infinite;
+}
+.console-underscore {
+  display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:1px;
+  right: 300px;
+}
+
+@keyframes animate
+{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+        color:#333;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+        color: #fff;
+        text-shadow: 0 0 10px white, 
+                    0 0 20px white,
+                    0 0 40px white,
+                    0 0 80px white,
+                    0 0 0px white;
+    }
+}
